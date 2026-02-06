@@ -1,0 +1,50 @@
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideUp {
+  from {
+    opacity: 0;
+    transform: translateY(100px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes scrollIndicator {
+  0% { transform: translateY(-100%); }
+  50% { transform: translateY(100%); }
+  100% { transform: translateY(200%); }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1.5s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+.animate-slideUp {
+  animation: slideUp 1.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+}
+
+/* Custom scroll reveal simulation */
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.reveal-on-scroll.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Uniform content scale applied only to inner containers so
+   section backgrounds remain full-width while visible UI is
+   reduced in size. Currently 80% of original size. */
+.content-scale {
+  transform: scale(0.8);
+  transform-origin: top center;
+}
