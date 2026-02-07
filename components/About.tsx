@@ -2,7 +2,7 @@ import React from 'react';
 
 const About: React.FC = () => {
   return (
-    <section id="about" className="pt-20 pb-1 md:pt-28 md:pb-2 lg:pt-32 lg:pb-4 scroll-mt-20 -mt-16 md:-mt-20">
+    <section id="about" className="pt-10 pb-0 md:pt-28 md:pb-2 lg:pt-32 lg:pb-4 scroll-mt-20 -mt-16 md:-mt-20 section-viewport">
       <div className="container mx-auto px-6 md:px-12 content-scale">
         {/* Bio Section */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20 items-center">
@@ -11,6 +11,7 @@ const About: React.FC = () => {
               <img 
                 src="https://i.pinimg.com/736x/2e/b6/bd/2eb6bdd6e7f416a92dc3f5017347738a.jpg" 
                 alt="Sarendem Worku Illustration" 
+                loading="lazy"
                 className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-90 group-hover:opacity-100"
               />
               {/* Subtle grain overlay for artistic texture */}

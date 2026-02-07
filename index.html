@@ -4,99 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Elysian | Web Design & Development</title>
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
-    <script>
-      tailwind.config = {
-        darkMode: 'class',
-        theme: {
-          extend: {
-            fontFamily: {
-              sans: ['Inter', 'sans-serif'],
-              serif: ['Playfair Display', 'serif'],
-            },
-            // Proportionally increase all standard font sizes by ~20%
-            // This scales only typography and not layout units like padding/margins/gap
-            fontSize: {
-              'xs': ['0.9rem', { lineHeight: '1.25rem' }],
-              'sm': ['1.05rem', { lineHeight: '1.5rem' }],
-              'base': ['1.2rem', { lineHeight: '1.75rem' }],
-              'lg': ['1.35rem', { lineHeight: '2rem' }],
-              'xl': ['1.5rem', { lineHeight: '2rem' }],
-              '2xl': ['1.8rem', { lineHeight: '2.25rem' }],
-              '3xl': ['2.25rem', { lineHeight: '2.5rem' }],
-              '4xl': ['2.7rem', { lineHeight: '1' }],
-              '5xl': ['3.6rem', { lineHeight: '1' }],
-              '6xl': ['4.5rem', { lineHeight: '1' }],
-              '7xl': ['5.4rem', { lineHeight: '1' }],
-              '8xl': ['7.2rem', { lineHeight: '1' }],
-              '9xl': ['9.6rem', { lineHeight: '1' }],
-            },
-            colors: {
-              luxury: {
-                dark: '#0a0a0a',
-                charcoal: '#141414',
-                gold: '#c5a059',
-                beige: '#e5e1da',
-                cream: '#fcfaf7',
-                muted: '#666666',
-              }
-            }
-          }
-        }
-      }
-    </script>
-    <style>
-      html {
-        scroll-behavior: smooth;
-        overflow-x: hidden;
-      }
-      
-      /* Root page wrapper; sections manage their own backgrounds */
-      body {
-        min-height: 100vh;
-      }
-
-      /* Root container spans full viewport width; scaling is applied only to inner content containers */
-      #root {
-        width: 100%;
-      }
-
-      /* Scale arbitrary large text values not covered by standard theme keys */
-      @media (min-width: 1024px) {
-        .lg\:text-\[11rem\] {
-          font-size: 13.2rem !important; /* Scaled from 11rem by ~20% */
-        }
-      }
-
-      ::-webkit-scrollbar {
-        width: 8px;
-      }
-      ::-webkit-scrollbar-track {
-        background: transparent;
-      }
-      ::-webkit-scrollbar-thumb {
-        background: #c5a05933;
-        border-radius: 10px;
-      }
-      ::-webkit-scrollbar-thumb:hover {
-        background: #c5a05966;
-      }
-    </style>
-  <script type="importmap">
-{
-  "imports": {
-    "react/": "https://esm.sh/react@^19.2.4/",
-    "react": "https://esm.sh/react@^19.2.4",
-    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
-    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
-  }
-}
-</script>
-<link rel="stylesheet" href="/index.css">
-</head>
+  </head>
   <body class="bg-luxury-cream dark:bg-luxury-dark text-luxury-charcoal dark:text-luxury-beige transition-colors duration-500 overflow-x-hidden">
     <div id="root"></div>
   <script type="module" src="/index.tsx"></script>

@@ -55,7 +55,7 @@ const Footer: React.FC = () => {
           <div className="space-y-6 md:col-span-2 flex flex-col md:items-end justify-between">
             <div className="text-left md:text-right">
               <h4 className="text-xs uppercase tracking-widest text-luxury-gold font-bold mb-4">Location</h4>
-              <p className="text-luxury-beige/60">
+              <p className="text-luxury-charcoal/70 dark:text-luxury-beige/70">
                 Remote / Global
               </p>
             </div>

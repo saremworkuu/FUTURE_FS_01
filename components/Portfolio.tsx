@@ -5,9 +5,9 @@ import { ExternalLink, Github } from 'lucide-react';
 
 const Portfolio: React.FC = () => {
   return (
-    <section id="projects" className="pt-1 pb-0 md:pt-2 md:pb-0 scroll-mt-20">
+    <section id="projects" className="pt-3 pb-0 md:pt-8 md:pb-0 lg:pt-10 lg:pb-0 scroll-mt-20 section-viewport">
       <div className="container mx-auto px-6 md:px-12 content-scale">
-        <div className="flex flex-col md:flex-row md:items-end justify-between mb-20">
+        <div className="flex flex-col md:flex-row md:items-end justify-between mb-10 md:mb-12">
           <div>
             <h2 className="font-serif text-5xl md:text-7xl mb-6">Selected Works</h2>
             <p className="text-luxury-muted dark:text-luxury-beige/60 max-w-md">
@@ -21,7 +21,7 @@ const Portfolio: React.FC = () => {
           </div>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 md:gap-x-16 gap-y-24 md:gap-y-32">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-x-14 md:gap-x-16 gap-y-12 md:gap-y-16">
           {PROJECTS.map((project, index) => (
             <div 
               key={project.id} 
@@ -31,6 +31,7 @@ const Portfolio: React.FC = () => {
                 <img 
                   src={project.image} 
                   alt={project.title} 
+                  loading="lazy"
                   className="w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-luxury-charcoal/40 opacity-0 group-hover:opacity-100 transition-opacity duration-500 flex items-center justify-center space-x-6">

@@ -39,8 +39,8 @@ const App: React.FC = () => {
 
       <Navbar theme={theme} toggleTheme={toggleTheme} />
       
-      {/* Section-to-section spacing kept very tight; individual sections handle most padding */}
-      <main className="space-y-2 md:space-y-3 lg:space-y-4">
+      {/* Section-to-section spacing removed; sections control their own paddings */}
+      <main className="space-y-0">
         <Hero />
         <About />
         <Portfolio />

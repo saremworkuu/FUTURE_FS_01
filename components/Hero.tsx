@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative min-h-[calc(100vh-6rem)] flex items-center justify-center pt-28 pb-16 md:pt-36 md:pb-20 overflow-hidden bg-luxury-cream dark:bg-luxury-dark"
+      className="relative flex items-center justify-center pt-20 pb-12 md:pt-28 md:pb-16 overflow-hidden bg-luxury-cream dark:bg-luxury-dark"
     >
       {/* Cinematic Hero Image Overlay - Subtle, moody background portrait */}
       <div className="absolute inset-0 w-full h-full pointer-events-none opacity-0 animate-[fadeIn_3s_ease-out_forwards] z-0">
@@ -34,7 +34,7 @@ const Hero: React.FC = () => {
           <span className="italic font-light opacity-80">Worku.</span>
         </h1>
         
-        <p className="max-w-2xl mx-auto text-lg md:text-2xl text-luxury-muted dark:text-luxury-beige/60 mb-10 md:mb-14 opacity-0 animate-[fadeIn_1s_ease-out_forwards_0.8s] leading-relaxed font-light">
+        <p className="max-w-2xl mx-auto text-lg md:text-2xl text-luxury-charcoal dark:text-luxury-beige/60 mb-10 md:mb-14 opacity-0 animate-[fadeIn_1s_ease-out_forwards_0.8s] leading-relaxed font-light">
           Building and testing problem-solving websites with strong security and <span className="text-luxury-charcoal dark:text-luxury-beige font-medium">high-performance engineering</span>.
         </p>
         

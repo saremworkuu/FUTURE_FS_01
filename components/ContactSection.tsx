@@ -10,7 +10,7 @@ const ContactSection: React.FC = () => {
   };
 
   return (
-    <section id="contact" className="w-full py-20 md:py-28 lg:py-32 bg-luxury-charcoal/5 dark:bg-luxury-charcoal/30 scroll-mt-20">
+    <section id="contact" className="w-full pt-2 pb-12 md:pt-5 md:pb-20 lg:pt-6 lg:pb-24 bg-luxury-charcoal/5 dark:bg-luxury-charcoal/30 scroll-mt-20 section-viewport">
       <div className="container mx-auto px-6 md:px-12 content-scale">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
           <div>

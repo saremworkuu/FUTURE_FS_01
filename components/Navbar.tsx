@@ -70,19 +70,23 @@ const Navbar: React.FC<NavbarProps> = ({ theme, toggleTheme }) => {
         </div>
       </div>
 
-      {/* Mobile Menu */}
-      <div className={`fixed inset-0 bg-luxury-cream dark:bg-luxury-dark z-[49] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] flex flex-col items-center justify-center space-y-12 md:hidden ${mobileMenuOpen ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'}`}>
-        {navLinks.map((link) => (
-          <a 
-            key={link.name} 
-            href={link.href} 
-            onClick={() => setMobileMenuOpen(false)}
-            className="font-serif text-5xl hover:text-luxury-gold transition-all duration-500 hover:italic tracking-tighter"
-          >
-            {link.name}
-          </a>
-        ))}
-      </div>
+      {/* Mobile Menu - right-aligned fixed dropdown for phones */}
+      {mobileMenuOpen && (
+        <div className="fixed top-16 right-4 z-[49] md:hidden">
+          <div className="bg-luxury-charcoal dark:bg-luxury-dark text-luxury-beige rounded-lg shadow-2xl py-3 px-4 space-y-2 min-w-[10rem]">
+            {navLinks.map((link) => (
+              <a
+                key={link.name}
+                href={link.href}
+                onClick={() => setMobileMenuOpen(false)}
+                className="block font-serif text-sm hover:text-luxury-gold transition-colors duration-200 tracking-tight"
+              >
+                {link.name}
+              </a>
+            ))}
+          </div>
+        </div>
+      )}
     </nav>
   );
 };

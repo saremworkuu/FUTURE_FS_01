@@ -5,14 +5,14 @@ const Skills: React.FC = () => {
   return (
     <section
       id="skills"
-      className="w-full pt-0 pb-20 md:pt-0 md:pb-28 lg:pt-0 lg:pb-32 -mt-16 md:-mt-20 lg:-mt-24 scroll-mt-20 bg-luxury-charcoal/5 dark:bg-luxury-charcoal/25"
+      className="w-full pt-1 pb-3 md:pt-1 md:pb-8 lg:pt-1 lg:pb-10 scroll-mt-20 bg-luxury-charcoal/5 dark:bg-luxury-charcoal/25 section-viewport"
     >
       <div className="container mx-auto px-6 md:px-12 content-scale">
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-20">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-10">
           {/* Skills Categorized */}
           <div>
-            <h3 className="font-serif text-4xl md:text-5xl mb-12">Technical Skills</h3>
-            <div className="space-y-12">
+            <h3 className="font-serif text-4xl md:text-5xl mb-4">Technical Skills</h3>
+            <div className="space-y-4">
               {SKILL_CATEGORIES.map((cat) => (
                 <div key={cat.title}>
                   <h4 className="text-xs uppercase tracking-[0.2em] text-luxury-gold mb-6 font-bold">{cat.title}</h4>
@@ -30,8 +30,8 @@ const Skills: React.FC = () => {
 
           {/* Experience Timeline */}
           <div>
-            <h3 className="font-serif text-4xl md:text-5xl mb-12">Experience</h3>
-            <div className="space-y-12 border-l border-luxury-charcoal/10 dark:border-luxury-beige/10 pl-8">
+            <h3 className="font-serif text-4xl md:text-5xl mb-4">Experience</h3>
+            <div className="space-y-6 border-l border-luxury-charcoal/10 dark:border-luxury-beige/10 pl-6">
               {EXPERIENCES.map((exp, idx) => (
                 <div key={idx} className="relative group">
                   <div className="absolute -left-[37px] top-1 w-4 h-4 rounded-full bg-luxury-gold transition-transform duration-500 group-hover:scale-150"></div>
