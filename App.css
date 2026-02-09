@@ -45,7 +45,10 @@
    section backgrounds remain full-width while the rendered
    UI shrinks to ~70% globally. */
 .content-scale {
-  transform: scale(0.7);
+  /* Disable scaling by default to keep responsive layout stable
+     on smaller viewports (prevents headings/background from
+     overflowing their containers when the window is resized). */
+  transform: none;
   transform-origin: top center;
 }
 
@@ -53,10 +56,19 @@
    without altering existing padding values. */
 @media (min-width: 1024px) {
   .section-viewport {
-    min-height: 80vh;
+    /* Make each major section occupy the full viewport height
+       so the layout reads as full-screen sections. */
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  /* Apply a subtle inner-scale only on large screens so the
+     desktop layout preserves your intended visual gap while
+     mobile/tablet layouts remain stable. */
+  .content-scale {
+    transform: scale(0.92);
   }
 
   .section-viewport > .container {
