@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center pt-16 pb-8 md:pt-28 md:pb-16 overflow-hidden bg-luxury-cream dark:bg-luxury-dark"
+      className="relative flex items-center justify-center pt-16 pb-16 md:pt-28 md:pb-24 min-h-[90vh] overflow-hidden bg-luxury-cream dark:bg-luxury-dark"
     >
       {/* Cinematic Hero Image Overlay - Subtle, moody background portrait */}
       <div className="absolute inset-0 w-full h-full pointer-events-none opacity-0 animate-[fadeIn_3s_ease-out_forwards] z-0">
@@ -66,9 +66,9 @@ const Hero: React.FC = () => {
       <div className="absolute top-0 right-[20%] w-px h-screen bg-gradient-to-b from-transparent via-luxury-gold/20 to-transparent hidden lg:block"></div>
 
       {/* Scroll indicator with text */}
-      <div className="absolute bottom-1 left-1/2 -translate-x-1/2 flex flex-col items-center opacity-40 transition-opacity hover:opacity-100 cursor-pointer group">
-        <span className="text-[9px] uppercase tracking-[0.4em] mb-30 group-hover:text-luxury-gold transition-colors">Scroll</span>
-        <div className="w-px h-16 bg-luxury-charcoal dark:bg-luxury-beige relative overflow-hidden">
+      <div className="absolute bottom-0 left-1/2 -translate-x-1/2 flex flex-col-reverse items-center opacity-40 transition-opacity hover:opacity-100 cursor-pointer group">
+        <span className="text-[9px] uppercase tracking-[0.4em] mt-3 group-hover:text-luxury-gold transition-colors">Scroll</span>
+        <div className="w-px h-10 sm:h-12 md:h-16 bg-luxury-charcoal dark:bg-luxury-beige relative overflow-hidden">
           <div className="absolute top-0 left-0 w-full h-1/2 bg-luxury-gold animate-[scrollIndicator_2s_infinite]"></div>
         </div>
       </div>
