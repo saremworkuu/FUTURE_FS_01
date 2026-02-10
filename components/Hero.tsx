@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     <section
       id="home"
-      className="relative flex items-center justify-center pt-20 pb-12 md:pt-28 md:pb-16 overflow-hidden bg-luxury-cream dark:bg-luxury-dark"
+      className="relative flex items-center justify-center pt-16 pb-8 md:pt-28 md:pb-16 overflow-hidden bg-luxury-cream dark:bg-luxury-dark"
     >
       {/* Cinematic Hero Image Overlay - Subtle, moody background portrait */}
       <div className="absolute inset-0 w-full h-full pointer-events-none opacity-0 animate-[fadeIn_3s_ease-out_forwards] z-0">
@@ -27,7 +27,7 @@ const Hero: React.FC = () => {
           </span>
         </div>
         
-        <h1 className="font-serif text-7xl md:text-9xl lg:text-[11rem] leading-[0.85] mb-6 md:mb-8 tracking-tighter opacity-0 animate-[slideUp_1.5s_ease-out_forwards_0.2s] text-luxury-charcoal dark:text-luxury-beige w-full max-w-[90vw] md:max-w-[70ch] lg:max-w-none">
+        <h1 className="font-serif text-4xl sm:text-5xl md:text-7xl lg:text-9xl leading-tight md:leading-[0.9] mb-6 md:mb-8 tracking-tighter opacity-0 animate-[slideUp_1.5s_ease-out_forwards_0.2s] text-luxury-charcoal dark:text-luxury-beige w-full max-w-[92vw] md:max-w-[70ch] lg:max-w-none">
           Sarendem <br />
           <span className="italic font-light opacity-80">Worku.</span>
         </h1>
@@ -37,11 +37,11 @@ const Hero: React.FC = () => {
         </p>
         
         <div className="flex flex-col md:flex-row items-center justify-center gap-6 opacity-0 animate-[fadeIn_1s_ease-out_forwards_1s]">
-          <a 
-            href="#projects" 
-            className="inline-block relative px-12 py-5 group overflow-hidden border border-luxury-charcoal dark:border-luxury-beige"
+          <a
+            href="#projects"
+            className="inline-block relative px-6 sm:px-8 py-3 sm:py-4 group overflow-hidden border border-luxury-charcoal dark:border-luxury-beige"
           >
-            <span className="relative z-10 text-[10px] uppercase tracking-[0.3em] font-bold group-hover:text-luxury-cream dark:group-hover:text-luxury-dark transition-colors duration-500">
+            <span className="relative z-10 text-[10px] sm:text-xs uppercase tracking-[0.3em] font-bold group-hover:text-luxury-cream dark:group-hover:text-luxury-dark transition-colors duration-500">
               Explore Portfolio
             </span>
             <div className="absolute inset-0 bg-luxury-charcoal dark:bg-luxury-beige translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-[cubic-bezier(0.19,1,0.22,1)]"></div>
